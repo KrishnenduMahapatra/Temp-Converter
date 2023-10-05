@@ -1,0 +1,115 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 150vh;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    animation: mymove 35s infinite;
+}
+
+@keyframes mymove {
+        0% { background-color: #2d79ab; }
+        50% { background-color: #94362b; }
+        100% { background-color: #307aac; }
+}
+
+.wrapper {
+    padding: 10px 100px;
+    width: 360px;
+    display: grid;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 66px;
+}
+
+.wrapper h1 {
+    margin-bottom: -100px;
+    font-size: 40px;
+    line-height: 1.2;
+    position: relative;
+    margin-right: 80px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(186, 172, 172); 
+    color: rgb(18, 19, 13); 
+}
+.wrapper img{ 
+    position: relative;
+    top: -5px;
+    max-width: 80px; 
+    margin-left: 300px;   
+    
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    -webkit-text-stroke: 0.5px rgb(136, 129, 129); 
+    color: rgb(208, 236, 70); 
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    width: 94%;
+    font: inherit;
+    color: #eee;
+}
+
+input[type="number"]:focus {
+    border-color: #ff4300;
+    outline: none;
+}
+
+button {
+    background-color: #ff5300;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    color: #fff;
+    font: inherit;
+}
+
+button:hover {
+    background-color: #ff4300;
+}
+
+.result {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0); 
+    color: rgb(246, 246, 246); 
+}
+
+#conversionOption {
+    font: inherit;
+    padding: 8px;
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#conversionOption option {
+    color: #555;
+}
+
+#conversionOption:focus {
+    border-color: #ff4300;
+    outline: none;
+}
